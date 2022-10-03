@@ -1,0 +1,39 @@
+variable "region" {
+  type    = string
+  default = "us-east-2"
+}
+
+variable "name_prefix" {
+  type    = string
+  default = "vpc-completed"
+}
+
+variable "cidr1" {
+  description = "vpc main cidr"
+  type        = string
+  default     = "10.0.0.0/16"
+}
+
+variable "cidr2" {
+  description = "aws public  subnet1 cidr"
+  type        = string
+  default     = "10.0.1.0/24"
+}
+
+variable "cidr3" {
+  description = "aws public subnet2 cidr"
+  type        = string
+  default     = "10.0.2.0/24"
+}
+
+variable "cidr4" {
+  description = "aws private subnet1 cidr"
+  type        = string
+  default     = "10.0.3.0/24"
+}
+
+variable "cidr5" {
+  description = "aws private subnet2 cidr"
+  type        = string
+  default     = "10.0.4.0/24"
+}
